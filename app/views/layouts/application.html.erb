@@ -15,28 +15,28 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <div>
-            <a class="text-white navbar-brand" href="/">Bookers</a>
+            <a class="text-white navbar-brand mb-1" href="/">Bookers</a>
           </div>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <% if user_signed_in? %>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <li class="nav-item mr-3">
+                  <li class="nav-item mr-3 pt-2">
                     <%= link_to "/users/#{current_user.id}" do %>
                       <p style="color: white;"><i class="fa fa-home" style="color: white;"></i>Home</p>
                     <% end %>
                   </li>
-                  <li class="nav-item mr-3">
+                  <li class="nav-item mr-3 pt-2">
                     <%= link_to "/users" do %>
                       <p style="color: white;"><i class="fa fa-users" style="color: white;"></i>Users</p>
                     <% end %>
                   </li>
-                  <li class="nav-item mr-3">
+                  <li class="nav-item mr-3 pt-2">
                     <%= link_to "/books" do %>
                       <p style="color: white;"><i class="fa fa-book-open" style="color: white;"></i>Books</p>
                     <% end %>
                   </li>
-                  <li class="nav-item mr-3">
+                  <li class="nav-item mr-3 pt-2">
                     <%= link_to destroy_user_session_path, method: :delete do %>
                       <p style="color: white;"><i class="fa fa-sign-in-alt" style="color: white;"></i>Log out</p>
                     <% end %>
@@ -44,22 +44,22 @@
                 </div>
               <% else %>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <li class="nav-item mr-3">
+                  <li class="nav-item mr-3 pt-2">
                     <%= link_to root_path do %>
                       <p style="color: white;"><i class="fa fa-home" style="color: white;"></i>Home</p>
                     <% end %>
                   </li>
-                  <li class="nav-item mr-3">
+                  <li class="nav-item mr-3 pt-2">
                     <%= link_to about_path do %>
                       <p style="color: white;"><i class="fa fa-link" style="color: white;"></i>About</p>
                     <% end %>
                   </li>
-                  <li class="nav-item mr-3">
+                  <li class="nav-item mr-3 pt-2">
                     <%= link_to new_user_registration_path do %>
                       <p style="color: white;"><i class="fa fa-user-plus" style="color: white;"></i>Sign up</p>
                     <% end %>
                   </li>
-                  <li class="nav-item mr-3">
+                  <li class="nav-item mr-3 pt-2">
                     <%= link_to new_user_session_path do %>
                       <p style="color: white;"><i class="fa fa-sign-in-alt" style="color: white;"></i>Log in</p>
                     <% end %>
